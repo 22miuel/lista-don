@@ -36,16 +36,39 @@
 
 
     const input = document.querySelector('input');
-    
+
 
 
     const button = document.querySelector('button');
     button.addEventListener('click', () =>{
         const inputValue = input.value;
         alert(inputValue);
+        input.value= '';
+        const newList = document.querySelector('ul');
+    const li = document.createElement('li');
+    li.texContent = "";
+
+    newList. appendChild(li);
+
+
+    const span = document.createElement('span');
+    span.textContent ="";
+
+    const button2 = document.createElement("button");
+    button2.textContent ="Delete";
+
+    newList.appendChild(span);
+    newList.appendChild(button2);
+
+    span.textContent = inputValue;
+    button2.addEventListener('click', () =>{
+        
         });
+
+
 
 
     </script>
 </body>
 </html>
+removeChild
